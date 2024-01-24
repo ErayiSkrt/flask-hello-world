@@ -1,7 +1,9 @@
 from flask import Flask
+from flas_cors import  CORS
 app = Flask(__name__)
+CORS(app)
 
-events = ["dragon"];
+events = [{"eventName": "dragon"}]
 
 characters = [];
 
