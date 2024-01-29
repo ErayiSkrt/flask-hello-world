@@ -15,7 +15,7 @@ def sendEvents():
 def sendCharacters():
     return characters
 
-@app.route("/addCharacter")
+@app.route("/addCharacter/<charName>")
 def addCharacter(charName):
     characters.append(charName);
     return sendCharacters();
