@@ -18,8 +18,6 @@ def sendCharacters():
 @app.route("/addCharacter/<charName>")
 def addCharacter(charName):
     characters.append(charName);
-    return sendCharacters();
-
 
 if __name__ == "__main__":
     app.run()
