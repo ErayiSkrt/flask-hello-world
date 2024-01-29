@@ -17,6 +17,9 @@ def sendCharacters():
 
 @app.route("/addCharacter/<charName>")
 def addCharacter(charName):
+    for name in characters:
+        if name == charName:
+            return;
     characters.append(charName);
 
 if __name__ == "__main__":
