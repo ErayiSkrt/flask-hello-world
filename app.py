@@ -20,7 +20,7 @@ def addCharacter(charName):
     for name in characters:
         if name == charName:
             return;
-    characters.append(charName);
+    characters.append({"charName": charName});
 
 if __name__ == "__main__":
     app.run()
